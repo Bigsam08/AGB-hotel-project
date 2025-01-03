@@ -1,0 +1,41 @@
+.filter-container {
+  box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+  display: flex;
+  margin-left: 15rem;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.search-rooms-input {
+  width: 100%;
+}
+.room-type {
+  width: 100%;
+  border: none;
+  padding: 5px;
+}
+.ant-picker {
+  border-color: white;
+  width: 100%;
+}
+.ant-picker:hover {
+  box-shadow: 0px 0px 5px hsla(43, 83%, 30%, 0.877);
+  border: none;
+}
+.date {
+  border-color: hsla(43, 83%, 30%, 0.877);
+}
+.search-field input {
+  border-radius: 15px;
+  padding: 5px;
+}
+.search-field input[type="search"]:focus {
+  outline: none;
+}
+.room-type-box {
+  border-radius: 15px;
+  padding: 5px;
+}
+select.room-type {
+  border: none;
+  outline: none;
+}

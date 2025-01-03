@@ -1,0 +1,113 @@
+* {
+	color: hsl(225, 76%, 13%);
+}
+.container {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	margin-top: 10px;
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+.check-out {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	padding: 20px;
+	margin-bottom: 10px;
+	background-color: hsl(225, 76%, 13%);
+}
+.check-out .back-link {
+	font-size: 20px;
+	font-weight: bold;
+	color: white; 
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+  }
+  .back-link span {
+	margin-left: 15px;
+	color: white;
+  }
+  .back-link span:hover {
+	text-decoration: underline;
+  }
+
+  .check-out a {
+	text-decoration: none;
+  }
+
+.price-details {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.103);
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+.contact-info {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+.contact-info input {
+	width: 80%;
+	padding: 8px;
+	margin-bottom: 5px;
+	background-color: transparent;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid hsla(0, 0%, 0%, 0.26);
+}
+.contact-info input:hover {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+}
+.contact-info p {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.policy {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	padding: 20px;
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+.acknowledge {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+
+/* CSS file */
+.paystack-button {
+	background-color: #28a745;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+  }
+  
+  .paystack-button:hover {
+	background-color: #218838;
+  }
+  
+  .paystack-button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+  }
+
+  /* Define the animation for the div */
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px); /* Starts slightly below */
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0); /* Ends in the final position */
+	}
+  }
+  

@@ -1,0 +1,104 @@
+/*  */
+/* Basic styling for the footer */
+.foot {
+	font-family: cursive, Arial;
+	margin-top: 20px;
+	padding: 70px 30px 20px;
+	width: 100%;
+	background-color: hsl(225, 76%, 13%);
+  }
+
+  .icons {
+	display: flex;
+	justify-content: center;
+  }
+
+  .icons img {
+	padding: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin-right: 50px;
+	width: 42px;
+	opacity: 0.9;
+  }
+
+  .icons img:hover {
+	transition: 0.5;
+	filter: invert(5);
+  }
+
+  .list {
+	margin: 20px 0px 0px 0px;
+  }
+
+  .list ul {
+	display: flex;
+	justify-content: center;
+  }
+
+  .list ul li {
+	list-style-type: none;
+	margin-right: 60px;
+  }
+
+  .footer-link {
+	color: white;
+	text-decoration: none;
+	opacity: 0.7;
+	transition: 0.5s;
+  }
+
+  .copy-rights {
+	color: white;
+	opacity: 0.7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  .copy-rights p {
+	margin: 0px 5px;
+  }
+  .privacy {
+	display: flex;
+  }
+  .privacy p {
+	margin-right: 10px;
+  }
+  
+  .designer-name {
+	color: goldenrod
+  }  /**  -----------------RESPONSIVE DESIGN-----------------------------*/
+
+  @media (max-width: 768px) {
+	.list ul li {
+		list-style-type: none;
+		margin-right: 30px;
+	  }
+	  .icons img {
+		margin-right: 10px;
+	  }
+
+  }
+
+
+  @media (max-width: 700px) {
+	.list ul {
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+	}
+	.footer-link {
+		width: 100%;
+		text-align: center;
+	}
+	.copy-rights {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 10px;
+	}
+	.privacy {
+		margin-top: 20px;
+		display: block;
+	}
+  }

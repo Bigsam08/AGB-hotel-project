@@ -1,0 +1,14 @@
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px); /* Starts slightly below */
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0); /* Ends in the final position */
+	}
+  }
+  .room-container {
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; /* Keep the final state after animation */
+  }

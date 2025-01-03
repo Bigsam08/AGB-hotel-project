@@ -1,0 +1,117 @@
+.navbar {
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 5px 0px 10px black;
+	/* background-color: hsl(225, 76%, 13%); */
+}
+
+.inline {
+	color: hsl(43, 80%, 32%);
+}
+.logo-box {
+	margin-left: 10%;
+	height: 60px;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.box-left {
+	padding: 0px 5px 0px 0px;
+	display: flex;
+	justify-content: right;
+}
+.box-left img {
+	width: 80px;
+	height: 60px;
+}
+.box-right p{
+	font-size: 1.6rem;
+	font-family: serif;
+	font-weight: bolder;
+	line-height: 1;
+	padding: 15px 0px 0px 0px;
+}
+
+.linkTxt {
+	color: hsl(225, 76%, 13%);
+	text-decoration: none;
+	font-family: cursive;
+	padding: 20px;
+}
+.linkTxt:hover {
+	color: hsl(43, 80%, 32%);
+	font-weight: 700;
+	transform: scale(1.1);
+}
+.drop-menu {
+	display: none;
+}
+
+
+/** ----------------- RESPONSIVE DESIGN----------------------------*/
+
+@media (max-width: 1024px) {
+	.navbar-brand {
+		font-size: 32px;
+	}
+	.linkTxt {
+		font-size: 20px;
+	}	
+
+}
+
+@media (max-width: 768px) {
+	.navbar-brand {
+		font-size: 32px;
+	}
+	.navbarNav {
+		display: none;
+	}
+	.drop-menu {
+		display: inline-block;
+	}
+	.drop-menu img {
+		width: 32px;
+		/* filter: invert(5); */
+	}
+	.logo-box {
+		margin-left: 0px;
+	}
+	.toggle-list {
+		padding: 20px 0;
+		box-shadow: 5px 0px 10px hsla(0, 0%, 0%, 0.438);
+		transition: from top 5s all ease-out;
+	}
+	.toggle-list li {
+		display: block;
+		width: 100%;
+		padding: 20px;
+		text-decoration: none;
+	}
+	.toggle-list li:hover {
+		width: 100%;
+		background: linear-gradient(to bottom, hsl(225, 76%, 13%)80%, hsla(224, 73%, 16%, 0.678));
+		transition: 3s;
+		border-radius: 5px;
+	}
+	li:hover .linkTxt {
+		color: aliceblue;
+	}
+	.left {
+		display: none;
+	}
+}
+@media (max-width: 430px) {
+	.logo-box {
+		margin-left: 0px;
+		width: 200px;
+	}
+	.box-right p {
+		font-size: 15px;
+	}
+	.box-left img {
+		width: 60px;
+		height: 50px;
+	}
+}
