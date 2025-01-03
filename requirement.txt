@@ -1,0 +1,21 @@
+# here are list of packages installed and needed for this project
+// both for front end and backend
+
+npx create-react-app
+npm init -y
+npm install express
+npm i -g nodemon
+npm install mongoose
+npm i router
+npm i react-router-dom
+npm i axios
+npm i react-bootstrap
+npm i react-spinners
+npm install antd
+npm install react-paystack
+npm install dotenv
+npm install sweetalert2
+npm install react-loader-spinner
+npm install nodemailer
+
+
