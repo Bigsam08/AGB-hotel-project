@@ -16,15 +16,15 @@ function Room({ room, arrival, departure }) {
   return (
     <div className="room-container mt-5 col-7 m-auto">
       <div className="img-div">
-        <img src={room.imgageUrl} alt="rooms pic" />
+        <img src={room.imgagesUrl[0]} alt="rooms pic" />
       </div>
       <div className="info-div">
       <p style={{fontWeight: "700", fontSize: "24px", fontFamily: "Cooper"}}>{room.name} </p>
       
           <p className="mt-3"> {room.amenities} </p>
-          <p> Room Type: {room.roomType} </p>
-          <p> Sleeps : {room.maxAdult} </p>
-          <p> Per Night: NGN {room.perNight} </p>
+          <p> Room Type: <b>{room.roomType}</b> </p>
+          <p> Sleeps : <b>{room.maxAdult}</b> </p>
+          <p> Per Night: <b>NGN {room.perNight}</b> </p>
         
         <div className="button">
           {arrival && departure && (
@@ -55,15 +55,12 @@ function Room({ room, arrival, departure }) {
 
         <Modal.Body>
           <Carousel prevLabel="" nextLabel="">
-            <Carousel.Item>
-              <img
-                src=""
-                alt="pic1"
-                className="d-block w-100  pb-4 modal-img"
-              />
+          {room.imgagesUrl.map(imgurl => {
+            return <Carousel.Item>
+              <img src={imgurl} alt="display picture" className="d-block w-100  pb-4 modal-img" />
             </Carousel.Item>
-          </Carousel>
-
+          })}
+          </Carousel> 
           <hr></hr>
           <p> {room.description} </p>
         </Modal.Body>
