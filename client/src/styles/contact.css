@@ -1,0 +1,68 @@
+.div-info {
+	margin-bottom: 15%;
+}
+.submitForm {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	padding: 20px;
+	width: 500px;
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+.submitForm p {
+		font-size: 20px;
+		font-weight: bold;
+		background-color: hsla(234, 90.90%, 12.90%, 0.99);
+		color: white;
+		padding: 12px 24px;
+}
+.submitForm input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-color: transparent transparent hsla(234, 91%, 13%, 0.253) transparent;
+	border-radius: 5px;
+}
+.submitForm input:focus {
+	border: 1px solid hsla(234, 91%, 13%, 0.253);
+	outline: none;
+}
+.submitForm button {
+	background-color: #28a745;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.submitForm button:hover {
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	transform: scale(1.0);
+}
+.info {
+	height: fit-content;
+	top: 20%;
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
+}
+.submitForm textarea {
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+	border-color: hsla(234, 91%, 13%, 0.253);
+}
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px); /* Starts slightly below */
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0); /* Ends in the final position */
+	}
+  }
