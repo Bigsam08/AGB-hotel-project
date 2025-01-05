@@ -1,20 +1,36 @@
-import React from "react";
+import { useState } from "react";
+import React  from "react";
 import "../styles/contact.css";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function Contact() {
-  // const contactpage = {
-  //   name: guestname,
-  //   email: "email",
-  //   message: ""
-  // };
-  // const [guestname, setguestname] = usesState("");
-  // const [guestemail, setguestemail] = useState('');
-  // const [ guestmessage, setguestmessage] = useState("")';
-  // 
-  // const sendmessage = async() => {
-  // await axios.post('api/contact/emailcontact, { contactpage})
-  // }
+  
+  const [guestname, setguestname] = useState("");
+  const [guestemail, setguestemail] = useState('');
+  const [ guestmessage, setguestmessage] = useState("");
+
+  const formMessage = {
+    name: guestname,
+    email: guestemail,
+    message: guestmessage
+  };
+  
+  const submitmessage = async(e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/mail/contact', formMessage);
+      Swal.fire("success!!", "Mail sent", "success");
+      console.log('Message Sent successfully to backend', response.data)
+      setguestemail('');
+      setguestname("");
+      setguestmessage("");
+    } catch (error) {
+      Swal.fire("Failed!!", "Message not sent", "error");
+      console.log('message not sent!!', error);
+    }
+  }
 
   return (
     <div className="" style={{ height: "fit-content" }}>
@@ -89,14 +105,14 @@ function Contact() {
           </b>
         </div>
 
-        <div className="submitForm d-block">
+        <form className="submitForm d-block" onSubmit={submitmessage}>
           <p> GET IN TOUCH </p>
           <br />
-          <input type="email" placeholder="Enter your email" />
-          <input type="text" placeholder="Enter your name" />
-          <textarea></textarea>
+          <input type="email" placeholder="Enter your email" onChange={(e) => {setguestemail(e.target.value)}} name="email" value={guestemail}required/>
+          <input type="text" placeholder="Enter your name" name="name" value={guestname} onChange={(e) => { setguestname(e.target.value)}} required />
+          <textarea placeholder="send us a message today...." name="message" value={guestmessage} onChange={(e) => { setguestmessage(e.target.value)}} required></textarea>
           <button type="submit"> SEND MESSAGE</button>
-        </div>
+        </form>
       </div>
       <div
         className="col-4 p-1"
@@ -125,14 +141,11 @@ function Contact() {
           width="100%"
           height="100%"
           style={{ border: "0" }}
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer"
           title="googlemap"
         ></iframe>
       </div>
     </div>
   );
-}
-
+  }
 export default Contact;
