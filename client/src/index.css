@@ -24,6 +24,51 @@ code {
   border-radius: 5px;
 }
 .btn-css:hover {
-	border: 1px solid white;
-	box-shadow: 0px 0px 5px #2c3e50;
-  }
+  border: 1px solid white;
+  box-shadow: 0px 0px 5px #2c3e50;
+  transform: scale(1.1);
+}
+/** gallery sliding */
+.slide-btn {
+  padding: 10px 20px;
+  background-color: hsl(224, 81%, 13%);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  border-radius: 50%;
+}
+.slide-btn:hover {
+  transform: scale(1.1);
+}
+
+.slide-lft {
+  padding: 10px 20px;
+  background-color: hsl(224, 81%, 13%);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  border-radius: 50%;
+}
+.slide-lft:hover {
+  transform: scale(1.1);
+}
+
+.pic-bright {
+  width: calc(25% - 10px);
+  height: 100%;
+  margin-right: 10px;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 5%;
+  filter: drop-shadow(0px 0px 2px white);
+  opacity: 0.7;
+}
+.pic-bright:hover {
+  opacity: 1;
+}

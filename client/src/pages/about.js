@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="main-div" style={{ height: "800px", marginBottom: "30px" }}>
+    <div className="main-div" style={{ height: "900px", marginBottom: "30px" }}>
       <div
         className="img-div w-100 p-0"
         style={{ height: "300px", position: "relative" }}

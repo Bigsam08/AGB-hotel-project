@@ -4,7 +4,7 @@ import "../styles/home.css";
 import Testimonials from "../component/Testimonials";
 import About from "../component/aboutComponent";
 import { Link } from "react-router-dom";
-import "../index.css";
+import Gallery from "../component/galleryCompo";
 
 function home() {
   const images = [
@@ -43,6 +43,7 @@ function home() {
         </Link>{" "}
       </div>
       <About />
+      <Gallery />
       <Testimonials />
     </>
   );

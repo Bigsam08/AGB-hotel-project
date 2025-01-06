@@ -33,11 +33,13 @@
 }
 
 .aboutPageTxt {
-	margin: 30px 10% 30px 10%;
+	margin: 30px 10% 10% 10%;
 	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
 	width: 80%;
-	height: 600px;
+	height: fit-content;
 	padding: 20px;
+	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+	animation-fill-mode: forwards; 
 }
 .aboutPageTxt h1 {
 	font-weight: 600;
