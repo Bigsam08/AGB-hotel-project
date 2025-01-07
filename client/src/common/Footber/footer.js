@@ -27,18 +27,20 @@ function Footer() {
           <li>
             <Link to="/" className="footer-link">Home</Link>
           </li>
-          <li>
-            <Link to="/about" className="footer-link">About</Link>
-          </li>
-          <li>
-            <Link to="/contact" className="footer-link">Contact</Link>
-          </li>
+         
           <li>
             <Link to="/rooms" className="footer-link">Room Avalability </Link>
           </li>
           <li>
             <Link to="/gallery" className="footer-link">Gallery</Link>
           </li>
+          <li>
+            <Link to="/about" className="footer-link">About</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="footer-link">Contact</Link>
+          </li>
+         
         </ul>
       </div>
       <div className="copy-rights">

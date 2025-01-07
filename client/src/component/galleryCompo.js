@@ -62,7 +62,7 @@ function GalleryCompo() {
         OUR GALL <span style={{ color: "hsl(43, 80%, 32%)" }}> ERY</span>
       </p>
       <div
-        className="gallery mt-0  col-md-7 p-3"
+        className="gallery mt-0  col-md-8 p-3"
         style={{ height: "300px" , overflow: "hidden", position: "relative",  transition: "opacity 0.3s ease-out",
 			opacity: "1"}}
       >

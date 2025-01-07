@@ -20,7 +20,7 @@ function Booking() {
 
   const arr = dayjs(arrival, "DD-MM-YYYY");
   const depart = dayjs(departure, "DD-MM-YYYY");
-  const totaldays = Math.abs(arr.diff(depart, "day")) + 1;
+  const totaldays = Math.abs(arr.diff(depart, "day"));
 
   const [totalAmount, settotalAmount] = useState();
 

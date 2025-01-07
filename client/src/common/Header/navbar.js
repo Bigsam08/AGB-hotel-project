@@ -41,6 +41,10 @@ function Navbar() {
           <img src="/images/menu.png" alt="menu icon" onClick={displayMenu} />
         </div>
         <div className="navbarNav">
+        <Link to="/gallery" className="linkTxt">
+            {" "}
+            Gallery{" "}
+          </Link>
           <Link to="/contact" className="linkTxt">
             {" "}
             Contact Us{" "}
@@ -49,6 +53,7 @@ function Navbar() {
             {" "}
             About Us{" "}
           </Link>
+          
         </div>
       </nav>
       <div className="dropped-toggle-list">

@@ -174,7 +174,6 @@ function RoomPage() {
             onChange={dateFilter}
             placeholder={placeholder} 
             value={getDatePickerValue()} // Conditionally set value based on dates
-            disabledDate={(current) => current && current.isBefore(dayjs(), 'day')} // Disable dates before today
           />
         </div>
 

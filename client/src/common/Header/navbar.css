@@ -1,7 +1,7 @@
 .navbar {
 	padding: 10px 30px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	box-shadow: 5px 0px 10px black;
 	/* background-color: hsl(225, 76%, 13%); */
 }
@@ -10,7 +10,7 @@
 	color: hsl(43, 80%, 32%);
 }
 .logo-box {
-	margin-left: 10%;
+	margin: 0px 10%;
 	height: 60px;
 	width: 300px;
 	display: flex;
