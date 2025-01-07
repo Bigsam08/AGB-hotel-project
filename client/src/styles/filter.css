@@ -1,7 +1,7 @@
 .filter-container {
   box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
   display: flex;
-  margin-left: 12%;
+  margin-left: 10%;
   padding: 20px;
   justify-content: space-evenly;
 }
@@ -39,9 +39,69 @@ select.room-type {
   border: none;
   outline: none;
 }
+.error-message {
+  height: 70vh;
+  margin-left: 10%;
+  justify-content: center;
+}
 
 
-@media (max-width: 1700px) {
-  
-  
+@media (max-width: 1057px) {
+  .filter-container {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-around;
+  }
+  .date-h b {
+    font-size: small;
+  }
+  .room-type-box {
+    border-radius: 10px;
+    padding: 0px;
+    width: 20%;
+  }
+  .search-field input {
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .error-message {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+@media (max-width: 840px) {
+  .filter-container{
+    flex-wrap: wrap;
+    display: flex;
+    
+  }
+  .search-field {
+    width: 40%;
+    gap: 30%;
+  }
+  .date {
+    width: 35%;
+  }
+}
+@media (max-width: 740px) {
+  .date {
+    width: 45%;
+  }
+  .search-field {
+    width: 45%;
+  }
+  .room-type-box {
+    margin-right: 50%; 
+    width: 50%;
+  }
+  .room-type {
+    font-size: smaller;
+    width: 60%;
+  }
+ 
+  .date-h b {
+    font-size: smaller;
+  }
+
 }

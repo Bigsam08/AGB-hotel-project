@@ -157,10 +157,10 @@ function RoomPage() {
   };
 
   return (
-    <div>
+    <div  className="" style={{ height: "fit-content"}}>
       <div className="filter-container col-md-9 mt-5 p-3">
         <div className="date p-1 col-md-3">
-          <div className="d-flex justify-content-between align-items-center  col-12">
+          <div className="d-flex justify-content-between align-items-center  col-12 date-h">
             {" "}
             <b>
               <p> Check In</p>
@@ -189,7 +189,7 @@ function RoomPage() {
           />
         </div>
 
-        <div className="room-type-box p-3 col-md-2 mt-4">
+        <div className="room-type-box p-3 col-md-2 mt-4 sm-2">
           <select
             className="room-type"
             value={roomType}
@@ -209,12 +209,7 @@ function RoomPage() {
         ) : error ? (
           // Render your Error component or message here
           <div
-            className="error-message col-md-9 mt-4 "
-            style={{
-              height: "70vh",
-              marginLeft: "10%",
-              justifyContent: "center",
-            }}
+            className="error-message col-md-9 mt-4 col-sm-11"
           >
             <Error />
             <b>
@@ -230,7 +225,7 @@ function RoomPage() {
         ) : (
           rooms.map((roomdata) => {
             return (
-              <div className="display-rooms col lg-12" key={roomdata._id}>
+              <div className="display-rooms col lg-12 col-sm-11" key={roomdata._id}>
                 <Room
                   room={roomdata}
                   arrival={checkInDate}

@@ -19,7 +19,7 @@ function Room({ room, arrival, departure }) {
         <img src={room.imgagesUrl[0]} alt="rooms pic" />
       </div>
       <div className="info-div">
-      <p style={{fontWeight: "700", fontSize: "24px", fontFamily: "Cooper"}}>{room.name} </p>
+      <p className="roomname">{room.name} </p>
       
           <p className="mt-3"> {room.amenities} </p>
           <p> Room Type: <b>{room.roomType}</b> </p>

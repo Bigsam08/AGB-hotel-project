@@ -134,13 +134,12 @@ function Booking() {
   };
 
   return (
-    <div>
+    <div style={{ height: "100vh"}}>
       {loading ? (
         <Loader />
       ) : room ? (
         <div
           className="container md-6 col-8"
-          style={{ height: "fitContent", padding: "20px" }}
         >
           <div className="check-out">
             <Link to="/rooms">
@@ -152,7 +151,7 @@ function Booking() {
           </div>
           <div
             className="contact-info md-2 h-10 col-7 p-3"
-            style={{ position: "relative" }}
+          
           >
             <p style={{ display: "block" }}>
               {" "}

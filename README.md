@@ -3,6 +3,7 @@
 ## Overview
 A hotel booking platform built with React, Node.js, Express, MongoDB Atlas, and integrated with Paystack payment gateway.
 The website allows users to view available rooms, make bookings, and securely process payments online and get booking confirmations via e-mails.
+This is a responsive website for all screen devices
 
 ## Features
 - Room Browsing: Users can browse available rooms with their details, including prices and descriptions.

@@ -2,6 +2,9 @@
 	color: hsl(225, 76%, 13%);
 }
 .container {
+	height: fit-conten;
+	padding: 20px;
+	margin-top: 5%;
 	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
 	margin-top: 10px;
 	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
@@ -40,6 +43,7 @@
 	animation-fill-mode: forwards; 
 }
 .contact-info {
+	position: relative;
 	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
 	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
 	animation-fill-mode: forwards; 
@@ -109,5 +113,22 @@
 	  opacity: 1;
 	  transform: translateY(0); /* Ends in the final position */
 	}
+  }
+
+  @media (max-width: 1300px) {
+	.container {
+		width: 90%;
+	}
+	
+  }
+  @media (max-width: 500px) {
+	.contact-info, .policy, .acknowledge, .paystack-button {
+		width: 90%;
+		display: block;
+	}
+	.price-details {
+		bottom: 100%;
+	}
+	
   }
   

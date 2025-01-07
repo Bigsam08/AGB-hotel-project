@@ -17,6 +17,13 @@
 .info-div {
 	margin: 20px;
 	width: 50%;
+
+}
+
+.roomname {
+	font-weight: 700;
+	font-size: 24px;
+	font-family: Cooper;
 }
 .info-div h1 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -39,4 +46,35 @@
 .modal-img {
 	height: 400px;
 	background-color: hsla(224, 73%, 27%, 0.767);
+}
+
+
+@media (max-width: 1024px) {
+	.room-container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 768px) {
+	.btn-details {
+		font-size: x-small;
+	}
+	.roomname {
+		font-size: 18px;
+	}
+	
+}
+
+@media (max-width: 450px) {
+	.img-div {
+		width: 50%;
+		height: 50%;
+	}
+	.info-div p{
+		font-size: small;
+	}
+	.btn-details {
+		font-size: x-small;
+	}
+	
 }
