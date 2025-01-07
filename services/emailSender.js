@@ -13,18 +13,27 @@ const sendConfirmedBookingMail = async(email, bookingDetails) => {
 		from: process.env.HOTEL_EMAIL,
 		to: email,
 		subject: "Booking confirmation Success",
-		html: `<h1 style="color: #4CAF50; text-align: center;">Booking Confirmation</h1>
-            <p>Dear ${bookingDetails.name} ${bookingDetails.lastName},
-            Thank you for booking with us! Here are your booking details:</p>
-            <p style="padding: 5px;"><strong>Room:</strong> &nbsp;&nbsp;${bookingDetails.room}</p>
-            <p style="padding: 5px;"><strong>Arrival:</strong> &nbsp;&nbsp;${bookingDetails.arrival}</p>
-            <p style="padding: 5px;"><strong>Departure:</strong> &nbsp;&nbsp;${bookingDetails.departure}</p>
-            <p style="padding: 5px;"><strong>Total Amount:</strong> &nbsp;&nbsp; NGN ${bookingDetails.totalAmount}</p>
-            <p style="padding: 5px;"><strong>Total Days:</strong> &nbsp;&nbsp; ${bookingDetails.totaldays}</p>
-            <p style="padding: 5px;"><strong>Booking Reference:</strong> &nbsp;&nbsp; ${bookingDetails.reference}</p>
-            <p>If you have any questions, feel free to reach out to us.</p>
-			<p>We look forward to your arrival as we are comitted at AGB HOTELS to give you the best of services</p>
-            <p  style="font-size: 16px; text-align: center; font-weight: bold;">Thank you!</p>
+		html: ` <div style="font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 600px; margin: auto;">
+            <h1 style="color: #4CAF50; text-align: center; margin-bottom: 20px;">Booking Confirmation</h1>
+            <p style="font-size: 16px; color: #333; line-height: 1.6;">Dear ${bookingDetails.name} ${bookingDetails.lastName},</p>
+            <p style="font-size: 16px; color: #333; line-height: 1.6;">Thank you for booking with us! Here are your booking details:</p>
+            
+            <div style="background-color: #ffffff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+				<p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">First Name:</strong> ${bookingDetails.name}</p>
+				<p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Last Name:</strong> ${bookingDetails.lastName}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Room:</strong> ${bookingDetails.room}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Arrival:</strong> ${bookingDetails.arrival}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Departure:</strong> ${bookingDetails.departure}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Total Amount:</strong> NGN ${bookingDetails.totalAmount}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Total Days:</strong> ${bookingDetails.totaldays}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Booking Reference:</strong> ${bookingDetails.reference}</p>
+            </div>
+
+            <p style="font-size: 16px; color: #333; margin-top: 20px;">If you have any questions, feel free to reach out to us.</p>
+            <p style="font-size: 16px; color: #333; margin-top: 10px;">We look forward to your arrival as we are committed at AGB HOTELS to give you the best of services.</p>
+
+            <p style="font-size: 18px; text-align: center; font-weight: bold; color: #333; margin-top: 30px;">Thank you!</p>
+        </div>
         `
 	};
 

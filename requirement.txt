@@ -17,5 +17,3 @@ npm install dotenv
 npm install sweetalert2
 npm install react-loader-spinner
 npm install nodemailer
-
-

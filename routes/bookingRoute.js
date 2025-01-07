@@ -20,6 +20,8 @@ router.post("/bookingroom", async (req, res) => {
     totaldays,
     reference,
   } = req.body;
+
+  console.log(req.body);
   const transactionReference = reference;
   try {
     /** check with paystack secret key to confirm if the payment was successful or not before saving the booking */
@@ -73,8 +75,8 @@ router.post("/bookingroom", async (req, res) => {
         name,
         lastName,
         room: room.name,
-        arrival: dayjs(arrival, "DD-MM-YYYY").format("DD-MM-YYYY"),
-        departure: dayjs(departure, "DD-MM-YYYY").format("DD-MM-YYYY"),
+        arrival,
+        departure,
         totalAmount,
         totaldays,
         reference: paymentData.data.reference,
