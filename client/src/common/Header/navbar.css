@@ -52,16 +52,53 @@
 /** ----------------- RESPONSIVE DESIGN----------------------------*/
 
 @media (max-width: 1024px) {
+	.navbar{
+		justify-content: space-around;
+	}
 	.navbar-brand {
 		font-size: 32px;
 	}
 	.linkTxt {
 		font-size: 20px;
-	}	
+	}
+	.navbarNav, .left {
+		display: none;
+	}
+	.drop-menu {
+		display: inline-block;
+	}
+	.drop-menu img {
+		width: 32px;
+		/* filter: invert(5); */
+	}
+	.logo-box {
+		margin-left: 0px;
+	}
+	.toggle-list {
+		padding: 20px 0;
+		box-shadow: 5px 0px 10px hsla(0, 0%, 0%, 0.438);
+		transition: from top 5s all ease-out;
+	}
+	.toggle-list li {
+		display: block;
+		width: 100%;
+		padding: 20px;
+		text-decoration: none;
+	}
+	.toggle-list li:hover {
+		width: 100%;
+		background: linear-gradient(to bottom, hsl(225, 76%, 13%)80%, hsla(224, 73%, 16%, 0.678));
+		transition: 3s;
+		border-radius: 5px;
+	}
+	li:hover .linkTxt {
+		color: aliceblue;
+	}
+
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1144px) {
 	.navbar-brand {
 		font-size: 32px;
 	}

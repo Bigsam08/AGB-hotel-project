@@ -19,14 +19,14 @@ const sendConfirmedBookingMail = async(email, bookingDetails) => {
             <p style="font-size: 16px; color: #333; line-height: 1.6;">Thank you for booking with us! Here are your booking details:</p>
             
             <div style="background-color: #ffffff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-				<p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">First Name:</strong> ${bookingDetails.name}</p>
-				<p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Last Name:</strong> ${bookingDetails.lastName}</p>
-                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Room:</strong> ${bookingDetails.room}</p>
-                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Arrival:</strong> ${bookingDetails.arrival}</p>
-                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Departure:</strong> ${bookingDetails.departure}</p>
-                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Total Amount:</strong> NGN ${bookingDetails.totalAmount}</p>
-                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Total Days:</strong> ${bookingDetails.totaldays}</p>
-                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Booking Reference:</strong> ${bookingDetails.reference}</p>
+				<p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">First Name:</strong>&nbsp;&nbsp;&nbsp; ${bookingDetails.name}</p>
+				<p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Last Name:</strong>&nbsp;&nbsp;&nbsp; ${bookingDetails.lastName}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Room:</strong> &nbsp;&nbsp;&nbsp; ${bookingDetails.room}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Arrival:</strong> &nbsp;&nbsp;&nbsp;${bookingDetails.arrival}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Departure:</strong> &nbsp;&nbsp;&nbsp;${bookingDetails.departure}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Total Amount:</strong>&nbsp;&nbsp;&nbsp; NGN ${bookingDetails.totalAmount}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Total Days:</strong> &nbsp;&nbsp;&nbsp;${bookingDetails.totaldays}</p>
+                <p style="font-size: 16px; color: #333; margin: 8px 0;"><strong style="color: #4CAF50;">Booking Reference:</strong> &nbsp;&nbsp;&nbsp;${bookingDetails.reference}</p>
             </div>
 
             <p style="font-size: 16px; color: #333; margin-top: 20px;">If you have any questions, feel free to reach out to us.</p>

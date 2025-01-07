@@ -45,3 +45,20 @@
 	font-weight: 600;
 	margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+	.aboutPageTxt h1 {
+		font-size: 20px;
+	}
+	
+}
+
+@media (max-width: 375px) {
+	.image h2 {
+		font-size: 19px;
+	}
+	.image p{
+		top: 60%;
+	}
+	
+}

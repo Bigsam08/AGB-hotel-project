@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/testimonial.css";
 
 /** Testimonials card to get our customers review */
 const Testimonials = [
@@ -80,6 +81,7 @@ function TestimonialComponent() {
                 left: "80%",
                 bottom: "0%",
               }}
+              className="user-pic"
             />
             <p style={{ fontStyle: "italic" }}> "{data.review}" </p>
             <b>

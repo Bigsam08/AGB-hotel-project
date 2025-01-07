@@ -212,7 +212,7 @@ function RoomPage() {
             className="error-message col-md-9 mt-4 "
             style={{
               height: "70vh",
-              marginLeft: "15rem",
+              marginLeft: "10%",
               justifyContent: "center",
             }}
           >
@@ -246,3 +246,4 @@ function RoomPage() {
 }
 
 export default RoomPage;
+

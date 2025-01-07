@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+	.testimonial-card {
+		width: 100%;
+	}
+	.div-testimonial {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10%;
+	}
+}

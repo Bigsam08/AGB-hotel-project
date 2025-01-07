@@ -20,9 +20,9 @@ function aboutComponent() {
         />
       </div>
       <div
-        className="about-txt  p-3 bg-white col-md-7"
+        className="about-txt  p-3 bg-white col-md-7 "
       >
-        <b><p style={{ fontFamily: "Agency FB", fontSize: "34px", color: "hsl(43, 75.00%, 28.20%)"}}> ABOUT US </p></b>
+        <b className="sethead" ><p style={{ fontFamily: "Agency FB", fontSize: "34px", color: "hsl(43, 75.00%, 28.20%)"}}> ABOUT US </p></b>
         <b> <p style={{ fontFamily: "sans-serif"}}> The Most Prefered Hotel in West Africa</p></b>
         <p>
           AGB Hotels & Suites is the most preferred hotel in West Africa, and it
@@ -30,7 +30,7 @@ function aboutComponent() {
           we offer our clients a perfect blend of business & leisure amenities
           with dining and recreational options delicately infused in one amazing
           space. We crown all these with services that meet the highest
-          international standards.
+          international standards..
         </p>
         <p>
           {" "}
@@ -38,7 +38,7 @@ function aboutComponent() {
           10-minute drive to the City Centre and only 45minutes away from the
           Airport.
         </p>
-        <p>
+        <p className="set-body">
           {" "}
           Our hotels are designed for your comfort and convenience. Your
           security is our primary concern and you will find our customer care

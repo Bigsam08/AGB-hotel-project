@@ -1,10 +1,9 @@
-.div-info {
-	margin-bottom: 15%;
-}
+
 .submitForm {
 	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
 	padding: 20px;
 	width: 500px;
+	height: fit-content;
 	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
 	animation-fill-mode: forwards; 
 }
@@ -57,6 +56,25 @@
 	border-radius: 5px;
 	border-color: hsla(234, 91%, 13%, 0.253);
 }
+
+.p {
+	font-size: 40px;
+	font-weight: bolder;
+	margin-left: 30px;
+}
+
+.agent {
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	height: fit-content;
+}
+
+.div-info {
+	height: 900px;
+	gap: 10%;
+	position: relative;
+}
 @keyframes fadeIn {
 	0% {
 	  opacity: 0;
@@ -65,5 +83,121 @@
 	100% {
 	  opacity: 1;
 	  transform: translateY(0); /* Ends in the final position */
+	}
+  }
+
+  @media (max-width: 1530px) {
+	
+	.agent img {
+		width: 200px;
+		height: 200px;
+	}
+	.p {
+		font-size: 30px;
+	}
+  }
+
+  @media (max-width: 1024px) {
+	.div-info {
+		gap: 10px;
+	}
+	.agent {
+		left: 5%;
+		width: 700px;
+		top: 65%;
+		height: fit-content;
+	}
+	.p {
+		font-size: 35px;
+		margin: 30px;
+	}
+
+
+  }
+
+
+  @media (max-width: 768px) {
+	.div-info {
+		display: grid;
+	}
+	.info {
+		height: fit-content;
+		padding: 5px;
+		width: 100%;
+
+	}
+	.info p{
+		margin-top: 0;
+	}
+	.agent{
+		display: none;
+		width: 250px;
+		flex-wrap: wrap;
+		left: 20px;
+		top: 50%;
+	}
+	.p {
+		font-size: small;
+	}
+	.submitForm{
+		position: absolute;
+		top: 45%;
+		right: 20px;
+		width: 400px;
+	}
+	.submitForm textarea {
+		height: 190px;
+		
+	}
+  }
+
+  @media (max-width: 650px) {
+	.image .contact-us {
+		font-size: medium;
+		
+	}
+	.image .p-text {
+		top: 60%;
+	}
+	.info b {
+		font-size: smaller;
+	}
+	.div-info img {
+		width: 18px;
+		height: 18px;
+	}
+	.submitForm textarea {
+		height: 100px;	
+	}
+	.submitForm input {
+		padding: 5px;
+	}
+	.submitForm {
+		width: 300px;
+		left: 15%;
+		margin-top: 30px;
+	}
+	.agent {
+		width: fit-content;
+		background-color: white;
+		padding: 0;
+		text-align: center;
+		border-radius: 50%;
+		top: 3%;
+		left: 60%;
+		border-color: hsla(0, 0%, 0%, 0.35) rgb(68, 51, 7);
+		border: 1px solid
+	}
+	.p {
+		font-size: 5px;
+	}
+	.agent img {
+		display: none;
+	}
+	.info {
+		width: 80%;
+	}
+	.submitForm p {
+		font-size: small;
 	}
   }
