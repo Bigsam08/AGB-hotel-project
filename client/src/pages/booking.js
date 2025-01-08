@@ -134,7 +134,7 @@ function Booking() {
   };
 
   return (
-    <div style={{ height: "100vh"}}>
+    <div style={{ height: "fit-content"}}>
       {loading ? (
         <Loader />
       ) : room ? (
