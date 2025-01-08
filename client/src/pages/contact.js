@@ -51,22 +51,19 @@ function Contact() {
         </div>
       </div>
 
-      <div
-        className="div-info  d-flex justify-content-center mt-4 p-3"
-      >
+      <div className="div-info  d-flex justify-content-center mt-4 p-3">
         <div className="info p-3">
           <b>
             <p style={{ fontSize: "18px" }}> INFORMATION </p>
           </b>
-          <br />
           <p> ADDRESS </p>
           <p>
-            <span   style={{ marginRight: "10px" }}>
+            <span >
               {" "}
               <img
                 src="/images/location.png"
                 alt="add"
-                style={{ width: "32px", height: "32px" }}
+                className="inline-img"
               />
             </span>
             <b>Plot 1415 PhilipStones Street, Lekki Phase 1, Lagos Nigeria</b>
@@ -75,12 +72,12 @@ function Contact() {
           <p id="title"> PHONE / FAX </p>
           <b>
             <p>
-              <span style={{ marginRight: "3px" }}>
+              <span >
                 {" "}
                 <img
                   src="/images/phone.jpg"
                   alt="phone"
-                  style={{ width: "32px", height: "32px" }}
+                  className="inline-img"
                 />
               </span>
               International Calls: +234 904-381-5024
@@ -90,12 +87,12 @@ function Contact() {
           <p id="title"> E-MAIL </p>
           <b>
             <p>
-              <span style={{ marginRight: "3px" }}>
+              <span >
                 {" "}
                 <img
                   src="/images/mail.jpg"
                   alt="mail"
-                  style={{ width: "32px", height: "32px" }}
+                  className="inline-img"
                 />
               </span>
               mastersamuel2@gmail.com
@@ -103,10 +100,7 @@ function Contact() {
           </b>
         </div>
 
-        <form
-          className="submitForm d-block"
-          onSubmit={submitmessage}
-        >
+        <form className="submitForm d-block" onSubmit={submitmessage}>
           <p> GET IN TOUCH </p>
           <br />
           <input
@@ -141,9 +135,7 @@ function Contact() {
           <button type="submit"> SEND MESSAGE</button>
         </form>
 
-        <div
-          className="col-4 p-0 agent d-flex"
-        >
+        <div className="col-4 p-0 agent d-flex">
           <img src="images/contact.jpg" alt="ok" style={{ marginLeft: "0" }} />{" "}
           <p className="p">
             We are available <br />

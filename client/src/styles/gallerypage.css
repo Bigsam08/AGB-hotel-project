@@ -18,14 +18,13 @@
 	color: aliceblue;
   }
 
-  .hero-container {
+  /* .hero-container {
 	position: relative;
 	width: 100%;
 	height: 300px;
-	background-image: url('');
 	background-size: cover;
 	background-position: center;
-  }
+  } */
   
   .hero-overlay {
 	position: absolute;
@@ -33,7 +32,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+	background: rgba(0, 0, 0, 0.692); 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -48,6 +47,7 @@
 	font-size: 36px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	color: white;
   }
   .hero-content img {
 	width: 100%;
@@ -59,10 +59,11 @@
 	font-size: 18px;
 	padding: 10px 20px;
 	text-decoration: none;
+	color: white;
   }
   .hero-content .btn:hover {
 	color: white;
-	transform: scale(1.1);
+	transform: scale(1.3);
   }
   
   @media (max-width: 768px) {

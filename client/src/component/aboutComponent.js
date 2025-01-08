@@ -4,26 +4,49 @@ import "../styles/aboutCompo.css";
 
 function aboutComponent() {
   return (
-    <div className=" mt-3" style={{ height: "1000px", position: "relative", boxShadow: "0px 5px 15px hsla(0, 0%, 0%, 0.103)"}}>
-      <p
-        className="h-style text-center"
-        >
+    <div
+      className=" mt-3"
+      style={{
+        height: "1000px",
+        position: "relative",
+        boxShadow: "0px 5px 15px hsla(0, 0%, 0%, 0.103)",
+      }}
+    >
+      <p className="h-style text-center">
         {" "}
         WELCOME TO{" "}
         <span style={{ color: "hsl(43, 80%, 32%)" }}>AGB HOTEL & SUITES </span>
       </p>
-      <div className="about-img " style={{ height: "600px", position: "relative"}}>
+      <div
+        className="about-img "
+        style={{ height: "600px", position: "relative" }}
+      >
         <img
           src="/images/front-view.jpg"
           alt="about our hotel"
           style={{ objectFit: "cover", height: "100%", width: "100%" }}
         />
       </div>
-      <div
-        className="about-txt  p-3 bg-white col-md-7 "
-      >
-        <b className="sethead" ><p style={{ fontFamily: "Agency FB", fontSize: "34px", color: "hsl(43, 75.00%, 28.20%)"}}> ABOUT US </p></b>
-        <b> <p style={{ fontFamily: "sans-serif"}}> The Most Prefered Hotel in West Africa</p></b>
+      <div className="about-txt  p-3 bg-white col-md-7 ">
+        <b className="sethead">
+          <p
+            style={{
+              fontFamily: "Agency FB",
+              fontSize: "34px",
+              color: "hsl(43, 75.00%, 28.20%)",
+            }}
+          >
+            {" "}
+            ABOUT US{" "}
+          </p>
+        </b>
+        <b>
+          {" "}
+          <p style={{ fontFamily: "sans-serif" }}>
+            {" "}
+            The Most Prefered Hotel in West Africa
+          </p>
+        </b>
         <p>
           AGB Hotels & Suites is the most preferred hotel in West Africa, and it
           is all about the right mix! Located in the heart of Victoria Island,
@@ -48,7 +71,7 @@ function aboutComponent() {
           {" "}
           <button className="btn-css">
             {" "}
-            LEARN MORE <span style={{ color: "white"}}> &#8594;</span>
+            LEARN MORE <span style={{ color: "white" }}> &#8594;</span>
           </button>
         </Link>
       </div>

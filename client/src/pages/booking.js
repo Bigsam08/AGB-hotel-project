@@ -134,13 +134,11 @@ function Booking() {
   };
 
   return (
-    <div style={{ height: "fit-content"}}>
+    <div className="main">
       {loading ? (
         <Loader />
       ) : room ? (
-        <div
-          className="container md-6 col-8"
-        >
+        <div className="container md-6 col-8">
           <div className="check-out">
             <Link to="/rooms">
               <p className=" back-link">
@@ -149,14 +147,11 @@ function Booking() {
               </p>
             </Link>
           </div>
-          <div
-            className="contact-info md-2 h-10 col-7 p-3"
-          
-          >
-            <p style={{ display: "block" }}>
+          <div className="contact-info md-2 h-10 col-7 p-3">
+            <p className="d-block">
               {" "}
               Contact Details{" "}
-              <span style={{ color: "red", float: "right", fontSize: "18px" }}>
+              <span>
                 {" "}
                 *Required{" "}
               </span>
@@ -187,61 +182,57 @@ function Booking() {
             <p> This is the email we will send your confirmation to.</p>
             <br />
             <div
-              className="price-details col-6 p-3"
-              style={{
-                position: "absolute",
-                top: "0",
-                marginLeft: "100%",
-                height: "fitContent",
-              }}
+              className="price-details col-8 p-3"
             >
               <b>
                 <p> Booking details </p>
               </b>
               <hr></hr>
-              <div className="mt-4">
+              <div className="mt-4 booking-confirmations">
                 <p>
                   {" "}
-                  Arrival : <span style={{ float: "right" }}> {arrival} </span>
+                  Arrival : <span className="float-right"> {arrival} </span>
                 </p>
                 <p>
                   {" "}
-                  Departure: <span style={{ float: "right" }}>
+                  Departure: <span className="float-right">
                     {departure}
                   </span>{" "}
                 </p>
                 <p>
                   {" "}
                   Total nights:{" "}
-                  <span style={{ float: "right" }}>{totaldays}</span>{" "}
+                  <span className="float-right">{totaldays}</span>{" "}
                 </p>
                 <p>
                   {" "}
                   price per Night:{" "}
-                  <span style={{ float: "right" }}>NGN {room.perNight} </span>
+                  <span className="float-right">NGN {room.perNight} </span>
                 </p>
                 <p>
                   {" "}
                   Tax and Fees :{" "}
-                  <span style={{ float: "right" }}>NGN 0.00 </span>
+                  <span className="float-right">NGN 0.00 </span>
                 </p>
                 <hr />
                 <p>
                   <b>
                     {" "}
                     Total :{" "}
-                    <span style={{ float: "right" }}>NGN {totalAmount} </span>
+                    <span className="float-right">NGN {totalAmount} </span>
                   </b>
                 </p>
-                <label>
+                <p>
                   {" "}
                   Including Taxes <br /> and Fees{" "}
-                </label>
+                </p>
               </div>
             </div>
           </div>
           <div className="policy col-7 mt-3">
-          <b><p> Policies</p></b>
+            <b>
+              <p> Policies</p>
+            </b>
             <br></br>
             <div className="policy-content">
               <b>
@@ -270,7 +261,9 @@ function Booking() {
           </div>
 
           <div className="acknowledge col-7 ">
-            <b><p> Acknowledgement</p></b>
+            <b>
+              <p> Acknowledgement</p>
+            </b>
             <br></br>
             <p>
               {" "}

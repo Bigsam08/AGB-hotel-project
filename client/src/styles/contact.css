@@ -37,6 +37,12 @@
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	transition: all 0.3s ease;
 }
+.inline-img {
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	margin-right: 20px;
+}
 
 .submitForm button:hover {
 	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
@@ -68,6 +74,7 @@
 	left: 20%;
 	top: 50%;
 	height: fit-content;
+	border: none;
 }
 
 .div-info {
@@ -89,7 +96,7 @@
   @media (max-width: 1530px) {
 	
 	.agent img {
-		width: 200px;
+		width: 250px;
 		height: 200px;
 	}
 	.p {
@@ -116,46 +123,15 @@
   }
 
 
+
   @media (max-width: 768px) {
-	.div-info {
-		display: grid;
-	}
-	.info {
-		height: fit-content;
-		padding: 5px;
-		width: 100%;
-
-	}
-	.info p{
-		margin-top: 0;
-	}
-	.agent{
-		display: none;
-		width: 250px;
-		flex-wrap: wrap;
-		left: 20px;
-		top: 50%;
-	}
-	.p {
-		font-size: small;
-	}
-	.submitForm{
-		position: absolute;
-		top: 45%;
-		right: 20px;
-		width: 400px;
-	}
-	.submitForm textarea {
-		height: 190px;
-		
-	}
-  }
-
-  @media (max-width: 650px) {
 	.image .contact-us {
 		font-size: medium;
-		
 	}
+	.div-info {
+		display: block;
+	}
+	
 	.image .p-text {
 		top: 60%;
 	}
@@ -167,37 +143,86 @@
 		height: 18px;
 	}
 	.submitForm textarea {
-		height: 100px;	
+		height: 150px;	
 	}
 	.submitForm input {
 		padding: 5px;
 	}
 	.submitForm {
-		width: 300px;
+		position: absolute;
+		width: 400px;
 		left: 15%;
-		margin-top: 30px;
+		top: 50%;
+		z-index: 2;
 	}
 	.agent {
 		width: fit-content;
 		background-color: white;
 		padding: 0;
-		text-align: center;
-		border-radius: 50%;
-		top: 3%;
+		text-align: right;
+		top: 45%;
 		left: 60%;
-		border-color: hsla(0, 0%, 0%, 0.35) rgb(68, 51, 7);
-		border: 1px solid
+		border: 1px solid;
+		z-index: 1;
+		border: none;
 	}
 	.p {
-		font-size: 5px;
+		font-size: 25px;
 	}
 	.agent img {
-		display: none;
+		height: 40px;
+		width: 40px;
 	}
 	.info {
 		width: 80%;
 	}
 	.submitForm p {
 		font-size: small;
+	}
+  }
+  @media (max-width: 500px) {
+	
+	.submitForm {
+		width: 90%;
+		left: 10px;
+		height: 350px;
+	}
+	.submitForm p, .submitForm button{
+		font-size: 12px;
+	}
+	.submitForm input {
+		padding: 2px;
+		margin-top: 2px;
+	}
+	.info {
+		height: fit-content;
+		padding: 0px;
+		width: 100%;
+
+	}
+	.info p {
+		font-size: 12px;
+	}
+	.inline-img {
+		width: 10px;
+		height: 50px;
+	}
+	.submitForm textarea {
+		height: 100px;	
+	}
+	.submitForm p {
+		margin-bottom: 0px;
+	}
+	.agent p{
+		font-size: 10px;
+	}
+	.agent {
+		height: 100px;
+		top: 38%;
+		width: 250px;
+		text-align: left;
+		margin-left: 3px;
+		left: 10px;
+		border: none;
 	}
   }

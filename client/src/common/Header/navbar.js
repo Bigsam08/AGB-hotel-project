@@ -9,7 +9,7 @@ function Navbar() {
   };
   const closeToggleMenu = () => {
     setDisplay(false);
-  }
+  };
 
   return (
     <>
@@ -33,7 +33,10 @@ function Navbar() {
             </Link>
           </div>
           <div className="box-right">
-            <p> AGB HOTELS <span className="inline"> & SUITES</span></p>
+            <p>
+              {" "}
+              AGB HOTELS <span className="inline"> & SUITES</span>
+            </p>
           </div>
         </div>
 
@@ -41,7 +44,7 @@ function Navbar() {
           <img src="/images/menu.png" alt="menu icon" onClick={displayMenu} />
         </div>
         <div className="navbarNav">
-        <Link to="/gallery" className="linkTxt">
+          <Link to="/gallery" className="linkTxt">
             {" "}
             Gallery{" "}
           </Link>
@@ -53,7 +56,6 @@ function Navbar() {
             {" "}
             About Us{" "}
           </Link>
-          
         </div>
       </nav>
       <div className="dropped-toggle-list">
@@ -61,7 +63,7 @@ function Navbar() {
           <ul className="toggle-list">
             <li>
               {" "}
-              <Link to="/" className="linkTxt" onClick={closeToggleMenu} >
+              <Link to="/" className="linkTxt" onClick={closeToggleMenu}>
                 Home
               </Link>
             </li>

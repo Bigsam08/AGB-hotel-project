@@ -23,7 +23,10 @@ function RoomPage() {
   const [searchRoom, setSearchRoom] = useState();
   const [roomType, setRoomType] = useState("all");
   const [searchActive, setSearchActive] = useState(false); // New state to track search activity
-  const [placeholder, setPlaceholder] = useState(["Arrival Date", "Departure Date"]);
+  const [placeholder, setPlaceholder] = useState([
+    "Arrival Date",
+    "Departure Date",
+  ]);
 
   /** use the get api request to fetch data from server side
    * use the useEffect function and useState (rooms) to save the the data from backend
@@ -157,7 +160,7 @@ function RoomPage() {
   };
 
   return (
-    <div  className="" style={{ height: "fit-content"}}>
+    <div className="" style={{ height: "fit-content" }}>
       <div className="filter-container col-md-9 mt-5 p-3">
         <div className="date p-1 col-md-3">
           <div className="d-flex justify-content-between align-items-center  col-12 date-h">
@@ -172,9 +175,11 @@ function RoomPage() {
           <RangePicker
             format="DD-MM-YYYY"
             onChange={dateFilter}
-            placeholder={placeholder} 
+            placeholder={placeholder}
             value={getDatePickerValue()} // Conditionally set value based on dates
-            disabledDate={(current) => current && current.isBefore(dayjs(), 'day')} // Disable dates before today
+            disabledDate={(current) =>
+              current && current.isBefore(dayjs(), "day")
+            } // Disable dates before today
           />
         </div>
 
@@ -208,9 +213,7 @@ function RoomPage() {
           <Loader />
         ) : error ? (
           // Render your Error component or message here
-          <div
-            className="error-message col-md-9 mt-4 col-sm-11"
-          >
+          <div className="error-message col-md-9 mt-4 col-sm-11">
             <Error />
             <b>
               <h3> ERROR CONNECTION </h3>
@@ -225,7 +228,10 @@ function RoomPage() {
         ) : (
           rooms.map((roomdata) => {
             return (
-              <div className="display-rooms col lg-12 col-sm-11" key={roomdata._id}>
+              <div
+                className="display-rooms col lg-12 col-sm-11"
+                key={roomdata._id}
+              >
                 <Room
                   room={roomdata}
                   arrival={checkInDate}
@@ -241,4 +247,3 @@ function RoomPage() {
 }
 
 export default RoomPage;
-
