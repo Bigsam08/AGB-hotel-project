@@ -14,9 +14,7 @@ db_connection();
 /** get a json format in post method when data is sent from client side */
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Welcome to my landing page');
-})
+
 app.use("/api/rooms", roomsRoute);
 app.use('/api/bookings', bookingRoute);
 app.use('/api/mail', contactRoute);
