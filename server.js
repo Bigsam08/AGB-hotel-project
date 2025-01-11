@@ -3,7 +3,6 @@ const db_connection = require("./db");
 const bookingRoute = require('./routes/bookingRoute');
 const roomsRoute = require("./routes/roomsRouter"); // room router
 const contactRoute = require("./routes/contactRoute");
-const adminRoute = require("./routes/adminRoute");
 const app = express();
 
 /** The main entry to the backedn server
@@ -19,7 +18,6 @@ app.use(express.json());
 app.use("/api/rooms", roomsRoute);
 app.use('/api/bookings', bookingRoute);
 app.use('/api/mail', contactRoute);
-app.use('/api/admin', adminRoute);
 
 
 
