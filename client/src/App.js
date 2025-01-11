@@ -8,6 +8,7 @@ import About from './pages/about';
 import Gallery from './pages/gallery';
 import Footer from "./common/Footber/footer";
 import RoomPage from "./pages/RoomPage";
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={< Contact />} />
         <Route path="/about" element={< About />} />
         <Route path="/gallery" element={< Gallery />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

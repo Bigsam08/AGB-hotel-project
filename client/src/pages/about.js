@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="main-div" style={{ height: "100vh", marginBottom: "30px" }}>
+    <div className="main-div" >
       <div
         className="img-div w-100 p-0"
         style={{ height: "300px", position: "relative" }}
@@ -16,7 +16,7 @@ function About() {
             alt="about us"
             style={{ objectFit: "cover" }}
           />
-          <h2> ABOUT</h2>
+          <h2> ABOUT</h2> 
           <Link to="/">
             <p> Home </p>
           </Link>

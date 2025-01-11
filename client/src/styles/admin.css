@@ -1,0 +1,97 @@
+.main-container {
+	min-height: 100vh;
+}
+form {
+	position: relative;
+	width: 40%;
+	padding: 15px;
+	margin-top: 10%;
+	height: fit-content;
+	text-align: center;
+	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.397);
+	background-color: hsl(231, 91%, 14%);
+	border-radius: 10px;
+	animation: fadeIn 1s ease-out; 
+	animation-fill-mode: forwards;
+}
+input {
+	margin: 5px 10%;
+	width: 80%;
+	display: block;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+}
+input:focus {
+	outline: none;
+}
+button {
+	padding: 1% 10%;
+	font-size: 16px;
+	font-weight: 800;
+	opacity: 0.8;
+	color:  hsl(231, 91%, 14%);
+	border-radius: 0px 10px 0px 10px;
+}
+button:hover{
+	opacity: 1;
+}
+.welcome {
+	font-size: 3rem;
+	color: rgb(218, 224, 224);
+	font-family: Agency FB;
+	margin-top: 10px;
+}
+.warning {
+	color: white;
+	animation: fadeInOut 2s infinite;
+	margin-top: 20%;
+}
+.fading-text {
+	animation: fadeInOut 2s infinite;
+	font-size: 20px; 
+	color: hsl(51, 85%, 23%); 
+  }
+  .view-success {
+	color: green;
+	display: bold;
+	font-weight: 700;
+	font-size: medium;
+  }
+  .view-success {
+	color: red;
+	display: bold;
+	font-weight: 700;
+	font-size: medium;
+  }
+  
+  @keyframes fadeInOut {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+  @media (max-width: 768px) {
+	.welcome {
+		font-size: 24px;
+	}
+	.warning, .fading-text{
+		font-size: 14px;
+	}
+	form {
+		width: 50%;
+	}
+	
+  }
+  @media (max-width: 425px) {
+	form {
+		width: 80%;
+		margin-top: 20%;
+	}
+  }

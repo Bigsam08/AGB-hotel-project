@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "proxy": "https://agbserver.onrender.com",
+  "proxy": "localhost:5000/",
   "private": true,
   "dependencies": {
     "antd": "^5.22.7",
@@ -17,7 +17,7 @@
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.15.0",
-    "sweetalert2": "^11.15.4"
+    "sweetalert2": "^11.15.4" 
   },
   "scripts": {
     "start": "react-scripts start",

@@ -29,7 +29,7 @@ function Gallery() {
   };
 
   return (
-    <>
+    <div className="main">
       <div className="hero-container" style={backgroundImageStyle}>
         <div className="hero-overlay">
           <div className="hero-content">
@@ -56,7 +56,7 @@ function Gallery() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -45,6 +45,10 @@
 	font-weight: 600;
 	margin-bottom: 20px;
 }
+.main-div {
+	min-height: 100vh;
+	margin-bottom: 60px;
+}
 
 @media (max-width: 768px) {
 	.aboutPageTxt h1 {

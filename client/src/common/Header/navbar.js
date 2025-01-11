@@ -28,7 +28,7 @@ function Navbar() {
               <img
                 src="/images/new-hotel-logo.png"
                 alt="logoimg"
-                className="logo"
+                className="logo" 
               />
             </Link>
           </div>

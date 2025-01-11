@@ -1,3 +1,8 @@
+.main {
+	min-height: fit-content;
+	margin-bottom: 50px;
+}
+
 @media (max-width: 425px) {
 	.gallery {
 		display: flex;
@@ -11,7 +16,9 @@
 		height: 100px;
 		width: 40%;
 	}
-	
+	.gallery-item {
+		height: 250px;
+	}
 }
 @media (max-width: 1024px) {
 	.gallery {

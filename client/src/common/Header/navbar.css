@@ -140,15 +140,25 @@
 	}
 }
 @media (max-width: 430px) {
+	.navbar {
+		justify-content: space-between;
+		padding: 5px;
+	}
 	.logo-box {
 		margin-left: 0px;
-		width: 200px;
+		width: 150px;
 	}
 	.box-right p {
-		font-size: 15px;
+		font-size: 13px;
 	}
 	.box-left img {
-		width: 60px;
-		height: 50px;
+		width: 50px;
+		height: 40px;
+	}
+	.box-right{
+		padding: 3px;
+	}
+	.box-left{
+		padding: 3px;
 	}
 }
