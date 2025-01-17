@@ -3,6 +3,7 @@
 	height: 100%;
 	border-radius: 5px;
 	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+	object-fit: cover;
 }
 .img-div {
 	padding: 30px;
@@ -57,10 +58,22 @@
 
 @media (max-width: 768px) {
 	.btn-details {
-		font-size: x-small;
+		font-size: small;
 	}
 	.roomname {
-		font-size: 18px;
+		font-size: 24px;
+	}
+	.room-container {
+		width: 90%;
+		margin-right: 0;
+	}
+	.img-div img {
+		height: auto;
+	}
+	.info-div {
+		margin: 0;
+		padding: 20px 10px 5px 5px;
+		width: 100%;
 	}
 	
 }

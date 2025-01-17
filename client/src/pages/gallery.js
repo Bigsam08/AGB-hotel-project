@@ -44,7 +44,10 @@ function Gallery() {
         <h2 className="text-center mb-4 p-3 ht">Our Photo Speaks</h2>
         <div className="row">
           {images.map((image, index) => (
-            <div key={index} className="col-md-4 col-sm-6 mb-4">
+            <div
+              key={index}
+              className="col-md-4 col-sm-6 mb-4  small-device-img"
+            >
               <div className="gallery-item">
                 <img
                   src={image}

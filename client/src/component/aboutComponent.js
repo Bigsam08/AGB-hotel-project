@@ -27,7 +27,7 @@ function aboutComponent() {
           style={{ objectFit: "cover", height: "100%", width: "100%" }}
         />
       </div>
-      <div className="about-txt  p-3 bg-white col-md-7 ">
+      <div className="about-txt  p-3 bg-white col-md-7 col-sm-12">
         <b className="sethead">
           <p
             style={{

@@ -53,6 +53,12 @@ function RoomPage() {
    */
 
   const dateFilter = (dates) => {
+    if (!dates) {
+      setCheckInDate(null);
+      setCheckOutDate(null);
+      setRooms(cloneRooms); // Reset rooms to all available rooms return; 
+      return;
+    }
     const arrFormatted = dayjs(dates[0]);
     const departFormatted = dayjs(dates[1]);
 
@@ -72,8 +78,8 @@ function RoomPage() {
       // If the room has bookings, check if the selected dates overlap with any of them
       if (room.currentBookings.length > 0) {
         for (const booking of room.currentBookings) {
-          const bookingFrom = dayjs(booking.arrival, "MM-DD-YYYY");
-          const bookingTo = dayjs(booking.departure, "MM-DD-YYYY");
+          const bookingFrom = dayjs(booking.arrival, "DD-MM-YYYY");
+          const bookingTo = dayjs(booking.departure, "DD-MM-YYYY");
 
           // Check if the selected dates overlap with the booking dates
           const isOverlap =
@@ -161,7 +167,7 @@ function RoomPage() {
 
   return (
     <div className="" style={{ height: "fit-content" }}>
-      <div className="filter-container col-md-9 mt-5 p-3">
+      <div className="filter-container col-md-9 mt-5 p-3"> 
         <div className="date p-1 col-md-3">
           <div className="d-flex justify-content-between align-items-center  col-12 date-h">
             {" "}
@@ -180,6 +186,7 @@ function RoomPage() {
             disabledDate={(current) =>
               current && current.isBefore(dayjs(), "day")
             } // Disable dates before today
+            allowClear
           />
         </div>
 

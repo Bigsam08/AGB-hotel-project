@@ -1,228 +1,237 @@
-
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.img-div-c {
+  width: 100%;
+  background-color: red;
+  position: relative;
+  height: 300px;
+}
+.cont-img-set {
+  width: 768px;
+  height: 300px;
+  object-fit: cover;
+}
 .submitForm {
-	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
-	padding: 20px;
-	width: 500px;
-	height: fit-content;
-	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
-	animation-fill-mode: forwards; 
+  box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+  padding: 20px;
+  width: 500px;
+  height: fit-content;
+  animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+  animation-fill-mode: forwards;
 }
 .submitForm p {
-		font-size: 20px;
-		font-weight: bold;
-		background-color: hsla(234, 90.90%, 12.90%, 0.99);
-		color: white;
-		padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: hsla(234, 90.9%, 12.9%, 0.99);
+  color: white;
+  padding: 12px 24px;
 }
 .submitForm input {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-color: transparent transparent hsla(234, 91%, 13%, 0.253) transparent;
-	border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: transparent transparent hsla(234, 91%, 13%, 0.253) transparent;
+  border-radius: 5px;
 }
 .submitForm input:focus {
-	border: 1px solid hsla(234, 91%, 13%, 0.253);
-	outline: none;
+  border: 1px solid hsla(234, 91%, 13%, 0.253);
+  outline: none;
 }
 .submitForm button {
-	background-color: #28a745;
-	color: white;
-	padding: 12px 24px;
-	border-radius: 5px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 .inline-img {
-	width: 32px;
-	height: 32px;
-	display: inline-block;
-	margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .submitForm button:hover {
-	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
-	transform: scale(1.0);
+  box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+  transform: scale(1);
 }
 .info {
-	height: fit-content;
-	top: 20%;
-	box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
-	animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
-	animation-fill-mode: forwards; 
+  height: fit-content;
+  top: 20%;
+  box-shadow: 0px 5px 15px hsla(0, 0%, 0%, 0.35);
+  animation: fadeIn 1s ease-out; /* Apply animation over 1 second */
+  animation-fill-mode: forwards;
 }
 .submitForm textarea {
-	padding: 5px 15px 5px 5px;
-	width: 100%;
-	height: 250px;
-	border-radius: 5px;
-	border-color: hsla(234, 91%, 13%, 0.253);
+  padding: 5px 15px 5px 5px;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  border-color: hsla(234, 91%, 13%, 0.253);
 }
 
 .p {
-	font-size: 40px;
-	font-weight: bolder;
-	margin-left: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 30px;
 }
 
 .agent {
-	position: absolute;
-	left: 20%;
-	top: 50%;
-	height: fit-content;
-	border: none;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  height: fit-content;
+  border: none;
 }
 
 .div-info {
-	height: 900px;
-	gap: 10%;
-	position: relative;
+  height: 900px;
+  gap: 10%;
+  position: relative;
 }
 @keyframes fadeIn {
-	0% {
-	  opacity: 0;
-	  transform: translateY(20px); /* Starts slightly below */
-	}
-	100% {
-	  opacity: 1;
-	  transform: translateY(0); /* Ends in the final position */
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Starts slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ends in the final position */
+  }
+}
+
+@media (max-width: 1530px) {
+  .agent img {
+    width: 250px;
+    height: 200px;
+  }
+  .p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .div-info {
+    gap: 10px;
+  }
+  .agent {
+    left: 5%;
+    width: 700px;
+    top: 65%;
+    height: fit-content;
+  }
+  .p {
+    font-size: 35px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .image .contact-us {
+    font-size: medium;
+  }
+  .div-info {
+    display: block;
   }
 
-  @media (max-width: 1530px) {
-	
-	.agent img {
-		width: 250px;
-		height: 200px;
-	}
-	.p {
-		font-size: 30px;
-	}
+  .image .p-text {
+    top: 60%;
   }
-
-  @media (max-width: 1024px) {
-	.div-info {
-		gap: 10px;
-	}
-	.agent {
-		left: 5%;
-		width: 700px;
-		top: 65%;
-		height: fit-content;
-	}
-	.p {
-		font-size: 35px;
-		margin: 30px;
-	}
-
-
+  .info b {
+    font-size: smaller;
   }
-
-
-
-  @media (max-width: 768px) {
-	.image .contact-us {
-		font-size: medium;
-	}
-	.div-info {
-		display: block;
-	}
-	
-	.image .p-text {
-		top: 60%;
-	}
-	.info b {
-		font-size: smaller;
-	}
-	.div-info img {
-		width: 18px;
-		height: 18px;
-	}
-	.submitForm textarea {
-		height: 150px;	
-	}
-	.submitForm input {
-		padding: 5px;
-	}
-	.submitForm {
-		position: absolute;
-		width: 400px;
-		left: 15%;
-		top: 50%;
-		z-index: 2;
-	}
-	.agent {
-		width: fit-content;
-		background-color: white;
-		padding: 0;
-		text-align: right;
-		top: 45%;
-		left: 60%;
-		border: 1px solid;
-		z-index: 1;
-		border: none;
-	}
-	.p {
-		font-size: 25px;
-	}
-	.agent img {
-		height: 40px;
-		width: 40px;
-	}
-	.info {
-		width: 80%;
-	}
-	.submitForm p {
-		font-size: small;
-	}
+  .div-info img {
+    width: 18px;
+    height: 18px;
   }
-  @media (max-width: 500px) {
-	
-	.submitForm {
-		width: 90%;
-		left: 10px;
-		height: 350px;
-	}
-	.submitForm p, .submitForm button{
-		font-size: 12px;
-	}
-	.submitForm input {
-		padding: 2px;
-		margin-top: 2px;
-	}
-	.info {
-		height: fit-content;
-		padding: 0px;
-		width: 100%;
-
-	}
-	.info p {
-		font-size: 12px;
-	}
-	.inline-img {
-		width: 10px;
-		height: 50px;
-	}
-	.submitForm textarea {
-		height: 100px;	
-	}
-	.submitForm p {
-		margin-bottom: 0px;
-	}
-	.agent p{
-		font-size: 10px;
-	}
-	.agent {
-		height: 100px;
-		top: 38%;
-		width: 250px;
-		text-align: left;
-		margin-left: 3px;
-		left: 10px;
-		border: none;
-	}
+  .submitForm textarea {
+    height: 150px;
   }
+  .submitForm input {
+    padding: 5px;
+  }
+  .submitForm {
+    position: absolute;
+    width: 400px;
+    left: 15%;
+    top: 50%;
+    z-index: 2;
+  }
+  .agent {
+    width: fit-content;
+    background-color: white;
+    padding: 0;
+    text-align: right;
+    top: 45%;
+    left: 60%;
+    border: 1px solid;
+    z-index: 1;
+    border: none;
+  }
+  .p {
+    font-size: 25px;
+  }
+  .agent img {
+    height: 40px;
+    width: 40px;
+  }
+  .info {
+    width: 80%;
+  }
+  .submitForm p {
+    font-size: small;
+  }
+}
+@media (max-width: 728px) {
+  .submitForm {
+    width: 90%;
+    left: 10px;
+    height: 350px;
+  }
+  .submitForm p,
+  .submitForm button {
+    font-size: 12px;
+  }
+  .submitForm input {
+    padding: 2px;
+    margin-top: 2px;
+  }
+  .info {
+    height: fit-content;
+    padding: 0px;
+    width: 100%;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .inline-img {
+    width: 10px;
+    height: 50px;
+  }
+  .submitForm textarea {
+    height: 100px;
+  }
+  .submitForm p {
+    margin-bottom: 0px;
+  }
+  .agent p {
+    font-size: 10px;
+  }
+  .agent {
+    height: 100px;
+    top: 38%;
+    width: 250px;
+    text-align: left;
+    margin-left: 3px;
+    left: 10px;
+    border: none;
+  }
+}

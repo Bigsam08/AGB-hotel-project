@@ -43,7 +43,7 @@ function Navbar() {
         <div className="drop-menu">
           <img src="/images/menu.png" alt="menu icon" onClick={displayMenu} />
         </div>
-        <div className="navbarNav">
+        <div className="left">
           <Link to="/gallery" className="linkTxt">
             {" "}
             Gallery{" "}

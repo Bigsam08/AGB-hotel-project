@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="main-div" >
+    <div className="main-div">
       <div
-        className="img-div w-100 p-0"
-        style={{ height: "300px", position: "relative" }}
+        className="img-div-c w-100 p-0"
       >
         <div className="overlay"></div>{" "}
         <div className="image w-100" style={{ height: "100%" }}>
@@ -16,7 +15,7 @@ function About() {
             alt="about us"
             style={{ objectFit: "cover" }}
           />
-          <h2> ABOUT</h2> 
+          <h2> ABOUT</h2>
           <Link to="/">
             <p> Home </p>
           </Link>

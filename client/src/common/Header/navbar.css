@@ -38,11 +38,14 @@
 	text-decoration: none;
 	font-family: cursive;
 	padding: 20px;
+	opacity: 0.8;
 }
 .linkTxt:hover {
+	opacity: 1;
 	color: hsl(43, 80%, 32%);
 	font-weight: 700;
-	transform: scale(1.1);
+	border-bottom: 2px solid hsl(43, 80%, 32%);
+	padding: 10px;
 }
 .drop-menu {
 	display: none;

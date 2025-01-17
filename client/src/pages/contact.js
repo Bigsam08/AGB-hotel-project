@@ -33,17 +33,10 @@ function Contact() {
 
   return (
     <div className="" style={{ height: "fit-content" }}>
-      <div
-        className="img-div w-100 p-0"
-        style={{ height: "300px", position: "relative" }}
-      >
+      <div className="img-div-c w-100 p-0">
         <div className="overlay"></div>
         <div className="image w-100" style={{ height: "100%" }}>
-          <img
-            src="/images/about.jpg"
-            alt="Contact Us"
-            style={{ objectFit: "cover" }}
-          />
+          <img src="/images/about.jpg" alt="Contact Us" />
           <h2 className="contact-us"> Contact Us</h2>
           <Link to="/">
             <p className="p-text"> Home </p>
@@ -58,7 +51,7 @@ function Contact() {
           </b>
           <p> ADDRESS </p>
           <p>
-            <span >
+            <span>
               {" "}
               <img
                 src="/images/location.png"
@@ -72,7 +65,7 @@ function Contact() {
           <p id="title"> PHONE / FAX </p>
           <b>
             <p>
-              <span >
+              <span>
                 {" "}
                 <img
                   src="/images/phone.jpg"
@@ -87,13 +80,9 @@ function Contact() {
           <p id="title"> E-MAIL </p>
           <b>
             <p>
-              <span >
+              <span>
                 {" "}
-                <img
-                  src="/images/mail.jpg"
-                  alt="mail"
-                  className="inline-img"
-                />
+                <img src="/images/mail.jpg" alt="mail" className="inline-img" />
               </span>
               mastersamuel2@gmail.com
             </p>
@@ -158,5 +147,4 @@ function Contact() {
     </div>
   );
 }
-
 export default Contact;

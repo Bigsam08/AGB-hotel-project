@@ -44,8 +44,8 @@ router.post("/bookingroom", async (req, res) => {
         lastName,
         email,
         roomid: room._id,
-        arrival: dayjs(arrival, "DD-MM-YYYY").format("DD-MM-YYYY"),
-        departure: dayjs(departure, "DD-MM-YYYY").format("DD-MM-YYYY"),
+        arrival,
+        departure,
         totalAmount,
         totaldays,
         reference: paymentData.data.reference,
@@ -61,8 +61,8 @@ router.post("/bookingroom", async (req, res) => {
       const currentBookingUpdate = await Room.findOne({ _id: room._id });
       currentBookingUpdate.currentBookings.push({
         bookingid: booking._id,
-        arrival: dayjs(arrival, "DD-MM-YYYY").format("DD-MM-YYYY"),
-        departure: dayjs(departure, "DD-MM-YYYY").format("DD-MM-YYYY"),
+        arrival,
+        departure,
         status: booking.status,
       });
       await currentBookingUpdate.save();

@@ -150,11 +150,7 @@ function Booking() {
           <div className="contact-info md-2 h-10 col-7 p-3">
             <p className="d-block">
               {" "}
-              Contact Details{" "}
-              <span>
-                {" "}
-                *Required{" "}
-              </span>
+              Contact Details <span> *Required </span>
             </p>
             <br></br>
             <input
@@ -181,9 +177,7 @@ function Booking() {
             />
             <p> This is the email we will send your confirmation to.</p>
             <br />
-            <div
-              className="price-details col-8 p-3"
-            >
+            <div className="price-details col-8 p-3">
               <b>
                 <p> Booking details </p>
               </b>
@@ -201,8 +195,9 @@ function Booking() {
                 </p>
                 <p>
                   {" "}
-                  Total nights:{" "}
-                  <span className="float-right">{totaldays}</span>{" "}
+                  Total nights: <span className="float-right">
+                    {totaldays}
+                  </span>{" "}
                 </p>
                 <p>
                   {" "}
@@ -211,8 +206,7 @@ function Booking() {
                 </p>
                 <p>
                   {" "}
-                  Tax and Fees :{" "}
-                  <span className="float-right">NGN 0.00 </span>
+                  Tax and Fees : <span className="float-right">NGN 0.00 </span>
                 </p>
                 <hr />
                 <p>

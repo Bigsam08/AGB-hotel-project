@@ -3,7 +3,6 @@ const db_connection = require("./db");
 const bookingRoute = require('./routes/bookingRoute');
 const roomsRoute = require("./routes/roomsRouter"); // room router
 const contactRoute = require("./routes/contactRoute");
-const cors = require('cors');
 const app = express();
 
 /** The main entry to the backedn server
@@ -12,10 +11,6 @@ const app = express();
 /** Connect to db */
 db_connection();
 
-/** Cross Origin Resource Sharing  */
-app.use(cors({
-  origin: 'https://agb-hotel-project.onrender.com'
-}))
 
 /** get a json format in post method when data is sent from client side */
 app.use(express.json());
