@@ -61,6 +61,11 @@ You can deploy the application on cloud platforms such as:
 1. Set up your MongoDB Atlas cluster.
 2. Set up Paystack production keys and environment variables on your hosting platform.
 
+ ## 🔗 Demo
+
+Watch a quick demo of the hotel booking site on YouTube:  
+[![Watch the demo]( https://www.youtube.com/watch?v=k43DMrKgwUw&t=15s)
+
 ## Contributing
 I welcome contributions to this project! To contribute:
 
